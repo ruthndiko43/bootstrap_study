@@ -22,25 +22,27 @@
             <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
                 <ul class="navbar-nav text-light">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tours</a>
+                        <a class="nav-link" href="#tour">Tours</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <button type="button" class="btn btn-outline-light">Subscribe</button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modals">
+                            Subscribe
+                        </button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section>
+    <section id="home">
         <div class="container-fluid text-center bg-body-tertiary mt-5">
             <h1>Explore the world with Travelmate</h1>
             <p>Unforgettable journey,crafted with care.</p>
@@ -140,162 +142,188 @@
             <div class="progress-bar bg-warning" style="width: 85%">85%</div>
         </div>
     </div>
-    <div class="container my-5">
-        <h2 class="text-center">Top Packages</h2>
-        <div class="container text-center">
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 shadow">
-                        <img src="dubai tour.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Dubai Tour</h5>
-                            <p class="card-text">Desert safari and city lights.</p>
-                            <span class="badge bg-success mb-2 ">From $799</span> <br>
-                            <a href="#" class="btn btn-primary">Book</a>
+    <section id="tour">
+        <div class="container my-5">
+            <h2 class="text-center">Top Packages</h2>
+            <div class="container text-center">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="dubai tour.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dubai Tour</h5>
+                                <p class="card-text">Desert safari and city lights.</p>
+                                <span class="badge bg-success mb-2 ">From $799</span> <br>
+                                <a href="#" class="btn btn-primary">Book</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 shadow">
-                        <img src="zanzibar gateway.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Zanzibar Getaway</h5>
-                            <p class="card-text">Beach bliss and cultural charm.</p>
-                            <span class="badge bg-success mb-2">From $999</span> <br>
-                            <a href="#" class="btn btn-primary">Book</a>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="zanzibar gateway.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zanzibar Getaway</h5>
+                                <p class="card-text">Beach bliss and cultural charm.</p>
+                                <span class="badge bg-success mb-2">From $999</span> <br>
+                                <a href="#" class="btn btn-primary">Book</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 shadow">
-                        <img src="maildives.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Maldives Escape</h5>
-                            <p class="card-text">Ultimate luxury overwater stay.</p>
-                            <span class="badge bg-success mb-2">From $1200</span> <br>
-                            <a href="#" class="btn btn-primary">Book</a>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="maildives.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Maldives Escape</h5>
+                                <p class="card-text">Ultimate luxury overwater stay.</p>
+                                <span class="badge bg-success mb-2">From $1200</span> <br>
+                                <a href="#" class="btn btn-primary">Book</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 shadow">
-                        <img src="Days in Dubai.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">5 Days in Dubai</h5>
-                            <p class="card-text">Enjoy luxury shopping, desert safaris, and skyscrapers.</p>
-                            <span class="badge bg-success mb-2">From $989</span><br>
-                            <a href="#" class="btn btn-primary">Book</a>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow">
+                            <img src="Days in Dubai.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">5 Days in Dubai</h5>
+                                <p class="card-text">Enjoy luxury shopping, desert safaris, and skyscrapers.</p>
+                                <span class="badge bg-success mb-2">From $989</span><br>
+                                <a href="#" class="btn btn-primary">Book</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <h2 class="text-center">Upcoming Tours</h2>
-        <table class="table table-bordered">
-            <tr class="table-dark">
-                <th>Destination</th>
-                <th>Date</th>
-                <th>Duration</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Cape Town</td>
-                <td>June 10,2025</td>
-                <td>7 Days</td>
-                <td>$899</td>
-            </tr>
-            <tr>
-                <td>Bali</td>
-                <td>July 10,2025</td>
-                <td>5 Days</td>
-                <td>$1100</td>
-            </tr>
-            <tr>
-                <td>Rome</td>
-                <td>August 15,2025</td>
-                <td>6 Days</td>
-                <td>$999</td>
-            </tr>
-        </table>
-    </div>
-    <div class="container-fluid bg-body-tertiary ">
-        <h2 class="text-center">What Our Travelers Say</h2>
         <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <p class="card-text">TravelMate planned my honeymoon in the Maldives and it was magical.
-                                Highly recommend!.</p>
-                            <h6 class="fw-bold mt-3">– Jane Doe</h6>
+            <h2 class="text-center">Upcoming Tours</h2>
+            <table class="table table-bordered">
+                <tr class="table-dark">
+                    <th>Destination</th>
+                    <th>Date</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Cape Town</td>
+                    <td>June 10,2025</td>
+                    <td>7 Days</td>
+                    <td>$899</td>
+                </tr>
+                <tr>
+                    <td>Bali</td>
+                    <td>July 10,2025</td>
+                    <td>5 Days</td>
+                    <td>$1100</td>
+                </tr>
+                <tr>
+                    <td>Rome</td>
+                    <td>August 15,2025</td>
+                    <td>6 Days</td>
+                    <td>$999</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container-fluid bg-body-tertiary ">
+            <h2 class="text-center">What Our Travelers Say</h2>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <p class="card-text">TravelMate planned my honeymoon in the Maldives and it was magical.
+                                    Highly recommend!.</p>
+                                <h6 class="fw-bold mt-3">– Jane Doe</h6>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <p class="card-text">Superb customer service and unforgettable experiences in Zanzibar!.
-                            </p>
-                            <h6 class="fw-bold mt-3">– John Smith</h6>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <p class="card-text">Superb customer service and unforgettable experiences in Zanzibar!.
+                                </p>
+                                <h6 class="fw-bold mt-3">– John Smith</h6>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <p class="card-text">Every detail was taken care of. The Paris trip exceeded my
-                                expectations.</p>
-                            <h6 class="fw-bold mt-3">– Mary Johnson</h6>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <p class="card-text">Every detail was taken care of. The Paris trip exceeded my
+                                    expectations.</p>
+                                <h6 class="fw-bold mt-3">– Mary Johnson</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container mt-5">
-        <h2 class="text-center">Get in Touch</h2>
-        <form class="mx-auto mb-3" style="max-width: 600px;">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-    </div>
-    <div class="container-fluid text-center text-md-start bg-dark text-light">
-        <div class="row">
-            <div class="col-md-6 mt-3">
-                <h5>TravelMate</h5>
-                <p>We turn your travel dreams into real adventures.</p>
-            </div>
-            <div class="col-md-3 mt-3">
-                <h6>Links</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                    <li><a href="#about" class="text-white text-decoration-none">About</a></li>
-                    <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
-                </ul>
-            </div>
-            <div class=" col-md-3 mt-3">
-                <h6>Follow Us</h6>
-                <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: rgb(255, 255, 255);"></i></a>
-                <a href=""><i class="fa-brands fa-instagram fa-xl" style="color: rgb(255, 255, 255);"></i></a>
-                <a href=""><i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i></a>
-            </div>
-            <div class="text-center mt-3">© 2025 TravelMate. All rights reserved.</div>
+    </section>
+    <section id="contact">
+        <div class="container mt-5">
+            <h2 class="text-center">Get in Touch</h2>
+            <form class="mx-auto mb-3" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
         </div>
-    </div>
+        <div class="container-fluid text-center text-md-start bg-dark text-light">
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <h5>TravelMate</h5>
+                    <p>We turn your travel dreams into real adventures.</p>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h6>Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class=" col-md-3 mt-3">
+                    <h6>Follow Us</h6>
+                    <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-xl" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i></a>
+                </div>
+                <div class="text-center mt-3">© 2025 TravelMate. All rights reserved.</div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="modals" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Subscribe to Newsletter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="">Full Name</label><br>
+                    <input type="text"><br>
+                    <label for="">Email address</label><br>
+                    <input type="email">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Subscribe</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
